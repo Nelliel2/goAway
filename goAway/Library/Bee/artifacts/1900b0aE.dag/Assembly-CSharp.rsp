@@ -390,6 +390,7 @@
 "Assets/Scripts/OpenCase1.cs"
 "Assets/Scripts/OpenebleObjects.cs"
 "Assets/Scripts/PlayerController.cs"
+"Assets/Scripts/PlayerManager.cs"
 "Assets/Scripts/PlayerRayCast.cs"
 "Assets/Scripts/ProgressBarComponent.cs"
 "Assets/Scripts/Saver_Manager.cs"
