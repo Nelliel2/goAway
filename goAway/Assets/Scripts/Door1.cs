@@ -4,14 +4,9 @@ using UnityEngine;
 
 public class Door1 : OpenebleObjects
 {
-    
     private Vector3 _startRotation;
     private Vector3 _targetRotation;
     [SerializeField] private float _rotateByDegrees = -90f;
-
-    /*private float openToCloseLerp;
-    [SerializeField] private bool _isOpened;
-    [SerializeField] private float _openCloseTime = 1f;*/
 
    
     void Start()
@@ -20,8 +15,6 @@ public class Door1 : OpenebleObjects
         _targetRotation = transform.rotation.eulerAngles + Vector3.up * _rotateByDegrees;
         
     }
-
-
 
     public override IEnumerator Open()
     {
@@ -57,23 +50,4 @@ public class Door1 : OpenebleObjects
         }
         else PlayAudio("closed");
     }
-
-   /* public void OpenOrClose()
-    {
-        _isOpened = !_isOpened;
-
-        StopAllCoroutines();
-        if (_isOpened)
-        {
-            FindObjectOfType<AudioManager>().Play("openDoor");
-
-            StartCoroutine(Open());
-        }
-        else
-        {
-            FindObjectOfType<AudioManager>().Play("openDoor");
-            StartCoroutine(Close());
-            
-        }
-    }*/
 }

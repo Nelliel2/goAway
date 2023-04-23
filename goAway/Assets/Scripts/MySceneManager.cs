@@ -6,46 +6,36 @@ using UnityEngine.SceneManagement;
 public class MySceneManager : MonoBehaviour
 {
     public static MySceneManager instance;
+
     void Awake()
     {
         if (instance == null)    // Ёкземпл€р менеджера был найден
         {
             instance = this; // «адаем ссылку на экземпл€р объекта
         }
-        else //if (instance == this)   // Ёкземпл€р объекта уже существует на сцене
+        else if (instance != this)   // Ёкземпл€р объекта уже существует на сцене
         {
             Destroy(gameObject); // ”дал€ем объект
-            return;
+            instance = this;  // «адаем ссылку на экземпл€р объекта
         }
 
-
         DontDestroyOnLoad(gameObject);  // “еперь нам нужно указать, чтобы объект не уничтожалс€ при переходе на другую сцену игры
-
-
     }
 
-    // Update is called once per frame
     void Update()
     {
-        Exit();
+        if (Input.GetKeyUp(KeyCode.Q))
+            OnExit();
     }
 
     public void LoadNewScene(int scenenumber)
     {
-        SceneManager.LoadSceneAsync (scenenumber);
+        SceneManager.LoadScene(scenenumber);
     }
 
     public void OnExit()
     {
         Application.Quit();
-    }
-
-    public void Exit()
-    {
-        if (Input.GetKeyUp(KeyCode.Q))
-        {
-            OnExit();
-        }
     }
 
     public void OpenURL()
