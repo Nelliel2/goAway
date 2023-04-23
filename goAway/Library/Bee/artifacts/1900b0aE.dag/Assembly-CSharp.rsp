@@ -392,6 +392,7 @@
 "Assets/Scripts/Saver_Manager.cs"
 "Assets/Scripts/Screamer.cs"
 "Assets/Scripts/Sound.cs"
+"Assets/Scripts/StoreInBox.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs"
