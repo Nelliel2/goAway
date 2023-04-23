@@ -14,7 +14,7 @@ public class Screamer : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponent<PlayerController>() != null)
+        if (other.GetComponent<PlayerManager>() != null)
         {
             new WaitForSeconds(2);
             _video.Play();
@@ -23,7 +23,7 @@ public class Screamer : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.GetComponent<PlayerController>() != null)
+        if (other.GetComponent<PlayerManager>() != null)
         {
             _video.Stop();
         }
