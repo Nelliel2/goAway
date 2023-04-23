@@ -16,11 +16,15 @@ public class PlaySound : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        PlayerAudio(nameMusicDown);
+        if (collision.gameObject.tag != "item")
+        { PlayerAudio(nameMusicDown); }
     }
     private void OnCollisionExit(Collision collision)
     {
-        PlayerAudio(nameMusicUp);
+        
+    
+        PlayerAudio(nameMusicUp); 
+        
     }
 
     void PlayerAudio(string nameMusic)

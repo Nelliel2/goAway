@@ -8,9 +8,6 @@ public class OpenCase1 : OpenebleObjects
     private Vector3 _endPosition;
     [SerializeField] private float _moveForwsrdBy= 0.3f;
 
-    /*[SerializeField] private float _openToCloseLerp;
-    private float _openCloseTime = 1f;
-    [SerializeField] private bool _isOpened;*/
 
     void Start()
     {
@@ -45,23 +42,8 @@ public class OpenCase1 : OpenebleObjects
         }
     }
 
-    /*public void OpenOrClose()
-    {
-        _isOpened = !_isOpened;
 
-        StopAllCoroutines();
-        if (_isOpened)
-        {
-           // FindObjectOfType<AudioManager>().Play("openCase");
 
-            StartCoroutine(Open());
-        }
-        else
-        {
-           // FindObjectOfType<AudioManager>().Play("openCase");
-            StartCoroutine(Close());
 
-        }
-    }*/
 }
 

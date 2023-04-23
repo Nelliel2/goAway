@@ -101,3 +101,31 @@ MonoBehaviour:
     loop: 0
     playOnAwake: 0
     source: {fileID: 0}
+  - name: gemUp
+    clip: {fileID: 8300000, guid: 079aa45976758314fa452b4119487488, type: 3}
+    volume: 1
+    pitch: 1.37
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: gemDown
+    clip: {fileID: 8300000, guid: 2c67891d82202b84a84220dd1223f04d, type: 3}
+    volume: 0.5
+    pitch: 3
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: boxUp
+    clip: {fileID: 8300000, guid: 7a552d96930812041a84b00ea3428b5f, type: 3}
+    volume: 1
+    pitch: 1.37
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: boxDown
+    clip: {fileID: 8300000, guid: c76dc8917ac731241a36799af9b3bcd7, type: 3}
+    volume: 1
+    pitch: 1.37
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
